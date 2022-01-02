@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://alexanderc04.github.io/single-price-grid/)
-- Live Site URL: (https://alexanderc04.github.io/single-price-grid/)
+- Solution URL: (https://github.com/AlexanderC04/huddle-landing-page.git)
+- Live Site URL: (https://alexanderc04.github.io/huddle-landing-page/)
 
 ## My process
 
