@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+/* 
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif; 
+*/
+
+:root {
+    --Violet: hsl(257, 40%, 49%);
+    --SoftMagenta: hsl(300, 69%, 71%);
+}
+
+.page {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    min-height: 100vh;
+    color: rgb(255, 255, 255);
+    background-image: url(/images/bg-mobile.svg);
+    background-color: var(--Violet);
+}
+
+.huddle {
+    display: grid;
+    padding: 39px;
+    max-width: 400px;
+}
+
+.huddle__header{
+    width: 50%;
+    max-width: 250px;
+    height:auto;    
+    margin-bottom: 65px;
+
+}
+
+.huddle__logo{
+    width: 100%;
+    height: 100%;
+}
+
+.huddle__mockups-container {
+    width: 100%;
+    max-width: 500px;
+    height:auto;    
+    margin-bottom: 65px;
+
+}
+
+.huddle__mockups {
+    width: 100%;
+    height: 100%;
+}
+
+.huddle__body {
+    display: grid;
+    text-align: center;
+    place-items: center;
+}
+
+.huddle__title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.huddle__description {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.huddle__registration-button {
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin-bottom: 60px;
+    width: 70%;
+    border-radius: 30px;
+    max-width: 220px;
+}
+
+.huddle__registration-link {
+    text-decoration: none;
+    color: var(--Violet);
+    font-family: 'Poppins', sans-serif;
+}
+
+.huddle__registration-button:hover {
+    background-color: var(--SoftMagenta);
+}
+
+.huddle__registration-button:hover .huddle__registration-link  {
+    color: rgb(255, 255, 255);
+}
+
+
+.huddle__footer{
+    text-align: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.huddle__social {
+    color: rgb(255, 255, 255);
+    border:1px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    justify-self: center;
+    align-self: center;
+}
+
+.huddle__social:hover {
+    color: var(--SoftMagenta);
+    border: 1px solid var(--SoftMagenta);
+}
+
+.huddle__facebook {
+    padding: 10px 14px ;
+}
+
+.huddle__twitter {
+    padding: 10px 10px;
+}
+
+.huddle__instagram {
+    padding: 10px 12px;
+}
+
+@media screen and (min-width:375px){
+    .page {
+        background-image: none;
+        background-image: url(/images/bg-desktop.svg);
+    }
+}
+
+@media screen and (min-width:840px){
+    .page {
+        background-image: none;
+        background-image: url(/images/bg-desktop.svg);
+    }
+    .huddle {
+        grid-template-columns: 60% 1fr;
+        grid-template-rows: auto auto auto;
+        max-width: none;
+        gap: 10px 30px;
+        padding: 10px 55px;
+    }
+    .huddle__mockups-container {
+        width: 100%;
+        max-width: none;
+        height: 100%;    
+        margin-bottom: 0px;
+    
+    }
+    .huddle__header {
+        grid-column: 1/3;
+        margin-bottom: 10vh;
+    }
+    .huddle__body {
+        margin-top: 12%;
+        display: grid;
+        text-align: start;
+        place-items: start;
+        align-content: start;
+        gap: 15px 0px;
+        width: 100%;
+        max-width: 450px;   
+    }
+    .huddle__title {
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+    .huddle__description {
+        margin-bottom: 0;
+    }
+    .huddle__registration-button {
+        text-align: center;
+        max-width: 150px;
+        margin-bottom: 0;
+    }
+    .huddle__footer {
+        grid-column: 2/3;
+        grid-row: 3/4;
+        justify-content: end;
+    }
+}
